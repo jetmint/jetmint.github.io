@@ -1,0 +1,9 @@
+FEDERATION_SERVER="https://api.jetmint.org/federation"
+AUTH_SERVER="https://api.jetmint.org/auth"
+DEPOSIT_SERVER="https://api.jetmint.org/deposit"
+
+[[CURRENCIES]]
+code="AngelXYZ"
+issuer="GANZBUS4726LBT2CBJ3BGF3TP4NJT5MHZMI423NHMXFRWGO2DCBQEXYZ"
+host="https://jetmint.org"
+
