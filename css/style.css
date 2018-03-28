@@ -27,7 +27,7 @@ a:hover, a:active {color: #333333; }
 
 
 body{ background:#030b1a url(../images/bg1.jpg) no-repeat center top; background-size:cover; font-family:Arial, Helvetica, sans-serif; min-width:1200px; margin:0 auto; font-weight:100;}
-.header{  height:60px;border-bottom:2px solid #5dca90; background:#01040a; text-align:center;}
+.header{  height:60px;border-bottom:2px solid #5dca90; background:#01040a; text-align:center; width:100%;}
 .wrapper{ width:1200px; margin:0 auto; }
 
 .header .logo{ float:left; padding-top:14px; padding-left:25px;}
@@ -54,7 +54,27 @@ body{ background:#030b1a url(../images/bg1.jpg) no-repeat center top; background
 .footer a:hover{ text-decoration:underline; color:#fff;}
 
 
+@media screen and (max-width: 1023px) {
+	body{ min-width:inherit;background:#030b1a url(../images/bg2.jpg) no-repeat center bottom;background-size:cover; }
+img {
+	max-width: 100%;
+}	
+.wrapper {
+	width:auto; padding:0;
+}	
+.header .logo{ float:left; padding-top:14px; padding-left:10px;}
+.header .action{ float:right; padding-right:18px; padding-top:18px;}
+.homeMod { padding-top:12%;}
+.homeMod .img img{ width:60%; vertical-align:top;}
+.homeMod .head{ text-align:center; color:#74faae; font-size:14px; padding:15px 20px;}
+.homeMod .img{ margin-bottom:5%;}
+.homeMod .search{ width:auto; margin:0 auto; padding:0 20px; height:50px; padding-top:5%;}
+.footer{ padding:15px 10px; word-break:break-all; width:auto; font-size:12px;}
+.homeMod .search .text{ float:left; width:59%; height:40px; font-size:16px; line-height:40px; background:#eaeaea; border-radius:5px; border:none; padding-left:4%;}
+.homeMod .search .btn{ display:block; background:url(../images/btn1.png) no-repeat center center; background-size:100% 100%; width:30%; height:40px; line-height:40px; text-align:center; color:#fff; font-size:16px; cursor:pointer; border:none; float:right;}
 
+
+}
 
 
 
