@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<script src="js/jquery1.42.min.js"></script>
+	</head>
+	<body>
+		<div class="project">
+			<!--headerMod start-->
+			
+			<div class="headerMod bgimg1">
+				<!--<div class="pic pic2">
+					<img src="img/about_bg.png"  />
+				</div>-->
+				
+				<div class="header">
+					<div class="wrapper clearfix">
+						<div class="logo fl">
+							<a href="index.html"><img src="img/logo.png" /></a>
+						</div>
+						<div class="nav fr">
+							<ul class="clearfix">
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li><a href="ecosystem.html">Ecosystem</a></li>
+								<li><a href="xyz.html">XYZ</a></li>
+								<li><a href="developers.html">Developers</a></li>
+								<li><a href="team.html">Team</a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="infoMod infoMod1">
+						<div class="wrapper">
+							<h4>ABOUT JETMINT </h4>
+							<p>
+								Jetmint is a community based, distributed, decentralized and growing digital asset investment eco-system. 
+							</p>
+							<p>
+								It is affordable, user-friendly, secure and efficient. Jetmint focuses on providing 
+							</p>
+							<p>
+								infrastructure for token asset innovation and investment. 
+							</p>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="video" style="backgroud:#000;">
+					<embed src="https://jetmint2018.oss-cn-beijing.aliyuncs.com/jetmint_video2.webm">
+						
+					</embed>
+					<!--<div class="cont">
+						<i></i>
+						
+					</div>-->
+				</div>		
+			</div>
+			
+			<!--headerMod end-->
+			
+			<div class="content">
+				<div class="aboutPage">
+					<div class="wrapper">
+						<div class="list">
+							<ul>
+								<li>
+									<div class="item clearfix">
+											<div class="icon">
+												<img src="img/icon8.png"  />
+											</div>
+											<div class="text">
+												<h5>Network</h5>
+												<p>
+													Based on the ideology of decentralized token asset innovation and investment, Jetmint adds effective inspiriting mechanism out of intelligent contract. The technology is open-sourced to all communities, which means it can be used by developers for free.
+												</p>
+											</div>
+										</div>
+								</li>
+								<li>
+									<div class="item clearfix">
+											<div class="icon">
+												<img src="img/icon9.png"  />
+											</div>
+											<div class="text">
+												<h5>Architecture</h5>
+												<p>
+													It is a distributed structure that consists of application layer, medium layer and core layer. 
+												</p>
+												<p>
+													<b>Application layer:</b> Various applications can be set up on the layer. It helps you make use of the basement logics and access Jetmint and other network simply.
+												</p>
+												<p>
+													<b>Medium layer:</b>  It is on top of the core layer. A serial of application development tools are included. It also prepares SDK for creating other applications. 
+												</p>
+												<p>
+													<b>Core layer:</b>  The basic network is formed by core servers. Each core maintains a local copy of the ledger. All cores keep their copies synchronized.
+												</p>
+											</div>
+										</div>
+								</li>
+								<li>
+									<div class="item clearfix">
+											<div class="icon">
+												<img src="img/icon10.png"  />
+											</div>
+											<div class="text">
+												<h5>Commercial Model</h5>
+												<p>
+													Jetmint establishes a non-profit organization--XYZ Foundation. Jetmint devotes itself to give develop enthusiasts more basic tools. Multiple optimal innovations will access into Jetmint eco-system. The innovation and investment mechanism is improved accordingly. Therefore, Jetmint network is used by everyone for free. The operation cost comes from 15% XYZ which is reserved for XYZ Fundation.
+												</p>
+											</div>
+										</div>
+								</li>
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>	
+			
+			<div class="foot foot1">
+				<div class="wrapper">
+					<div class="contanct">
+						<h4>CONTACT US</h4>
+						<ul class="clearfix">
+							<li>
+								<a href="https://twitter.com/Jetmint_2018">
+									<img src="img/twitter.png"class="show" />
+									<img src="img/twitter-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/JetmintOrg">
+									<img src="img/facebook.png" class="show"/>
+									<img src="img/facebook-hover.png"class="hide" />
+								</a>
+							</li>
+							
+							<li>
+								<a href="https://t.me/joinchat/FdtuBhDddZYHpGiB6NUXAA">
+									<img src="img/telegram.png"class="show" />
+									<img src="img/telegram-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.reddit.com/r/jetmint">
+									<img src="img/reddit.png" class="show"/>
+									<img src="img/reddit-hover.png"class="hide" />
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<p class="copright">Copyright © 2018 XYZ Foundation</p>
+				</div>				
+			</div>
+			
+			
+			
+			
+		</div>
+		
+<script>
+	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');	
+	$('.gh').click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+			$('.nav').fadeOut();
+		}		else{
+			$(this).addClass('selected');
+		$('.nav').fadeIn();
+		}
+	});
+</script>	
+	</body>
+</html>

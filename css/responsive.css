@@ -1,0 +1,208 @@
+﻿
+@media screen and (max-width: 1100px) {
+.gh { position:absolute; right:0; z-index:101; padding:2px 5px;
+height:30px;width:30px;  border-radius:30%; border:1px solid #303135;
+top:0;margin-right:20px; 
+	transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	cursor: pointer;
+	display: none;
+	z-index: 9999;}
+.gh.selected {
+	transform: rotate(90deg);}
+.gh a { background-color: #303135;
+	display: block;
+	height:2px;line-height: 0;
+	position: relative;
+	top: 50%;
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	width: 70%;  margin:-2px auto 0; }
+.gh a:after, .gh a:before {
+ background-color: #303135;
+	content: "";
+	display: block;
+	height: 2px;
+	left: 0;
+	position: absolute;
+	transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-webkit-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	-ms-transition: all 0.3s cubic-bezier(0.7, 0, 0.3, 1) 0s;
+	width: 100%;}
+.gh a:after {top:8px;}
+.gh a:before {top: -8px;}
+.gh.selected a:after, .gh.selected a:before {top: 0;      /*     background: #fff;   */   background-color: #303135;   }
+.gh.selected a:before {
+	transform: translateY(0px) rotate(-45deg);
+	-webkit-transform: translateY(0px) rotate(-45deg);
+	-ms-transform: translateY(0px) rotate(-45deg);
+}
+.gh.selected a:after {
+	transform: translateY(0px) rotate(45deg);
+	-webkit-transform: translateY(0px) rotate(45deg);
+	-ms-transform: translateY(0px) rotate(45deg);}
+.gh.selected{ top:18px; border:none;}
+.gh.selected a {background-color: transparent !important;}
+
+
+.header .gh{ display:block;}
+.header .nav{background:#fff; position:fixed; left:0; top:0; height:100%; width:100%; float:none; z-index:10; display:none;}	  
+.header .nav ul{width:100% !important; padding-top:150px !important;}
+.header .nav li {width: 100%;height:100%; float:none;text-align: center;}
+
+.header .nav ul li{float:left;margin-right: 40px;}
+.header .nav ul li a{font-size: 14px; color: #000;font-family:tahoma;
+display:block;height: 50px;line-height: 50px;    border-bottom:1px solid #ccc;}
+.header .nav ul li a.on{color: #FFC900;}
+
+
+.wrapper{width:auto;padding:0 15px;}
+.fl,.fr{float:none;}
+
+
+
+/*.headerMod{height:300px;background: #a024ff;}
+.headerMod .pic{display:none;}*/
+
+
+
+
+.bgimg{background: url(../img/top_bg.png) no-repeat center;
+background-size:200% 100%;padding-bottom:100%;width: 100%;height:auto; }
+
+.bgimg1{background: url(../img/about_bg.png) no-repeat center;
+background-size:200% 100%;padding-bottom:100%;width: 100%;height:auto;}
+
+.bgimg2{background: url(../img/develpoers_top.png) no-repeat center;
+background-size:200% 100%;padding-bottom:50%;width: 100%;height:auto;}
+
+.bgimg3{background: url(../img/app_bg.png) no-repeat center;
+background-size:200% 100%;padding-bottom:80%;width: 100%;height:auto;}
+
+.bgimg4{background: url(../img/teamotp.png) no-repeat center;
+background-size:160% 100%;padding-bottom:60%;width: 100%;height:auto;}
+
+.bgimg5{background: url(../img/xyzotp.png) no-repeat center;
+background-size:160% 100%;padding-bottom:60%;width: 100%;height:auto;}
+
+
+
+.headerMod .infoMod{text-align: center;padding-top:20px;color:#fff;left:0;}
+
+.headerMod .infoMod h4{font-size:16px;margin-bottom:15px;font-family:tahoma;font-weight:bold;}
+.headerMod .infoMod p{font-size:12px;font-family:tahoma;margin-bottom:5px;}
+
+/*.headerMod .video{display:none;}*/
+
+
+
+
+
+
+
+.investments {padding-top:50px;}
+.investments .pic{display:none;}
+.investments .text{width:90%;padding-top:0;margin: 0 auto;}
+
+
+.Fundraising ul li{float:none;width:100%;text-align: center; margin-bottom:20px;
+background: url(../img/li_bg.png) no-repeat center;
+ background-size:100% 100%;height:430px;}
+ .Fundraising .item{padding:50px 0 35px; }
+.management ul li{float:none;width:100%;margin-bottom:40px; text-align: center;
+overflow:hidden;}
+
+.management .item .cont{padding:20px 30px;}
+.management .item{ height:260px;}
+.management .icon{float:none;width: 100%;margin-bottom:10px;}
+.management .txt{float:none;width: 100%;}
+.management .txt h5{margin-bottom: 20px;}
+
+
+.foot .signUp .text{width:50%;height:60px;}
+.foot .signUp .btn{width:25%;height:60px;}
+
+
+
+
+.applPage .list{text-align: center;}
+.applPage .list .pic img{width:90px;height:90px;margin-bottom: 45px;}
+.applPage .list .text{padding:0 100px;}
+.applPage .list .text h4{font-size:20px;color:#333333;font-family:tahoma;font-weight:bold;margin-bottom:25px;}
+.applPage .list .text p{font-size:14px;color: #666;font-family:tahoma;line-height: 20px;}
+.applPage .list1{margin:0 auto 60px;width: 50%;}
+.applPage .list2 ul li{float:left;width:100%;margin-bottom: 80px;}
+
+.applPage .list .text{width:100%;padding:0 0;}
+
+.decelop{padding:150px 0 150px;background: #fff;}
+
+.copright{padding:50px 10px;}
+
+.aboutPage .list{padding-top:100px;}
+.aboutPage .list ul li{text-align: center;}
+.aboutPage .list .icon{float:none;width:100%;}
+.aboutPage .list .text{float:none;width:100%;}
+
+.foot1 .contanct ul{width:auto; margin:0 auto; float:none;padding-right:0;
+padding-left:70px;}
+
+
+.xyzPage .wrapper{width:auto;padding:100px 15px;}
+.xyzPage .cont .picmod img{width:100%;display:block;margin: 0 auto;}
+
+
+.xyzPage .aboutPage .list{padding:0 0;}
+.xyzPage .aboutPage .list li{margin-bottom:100px; text-align: center;}
+.xyzPage .aboutPage .list li:hover{background:none;}
+.xyzPage .aboutPage .list .item{padding:35px 10px;}
+.xyzPage .applPage{padding:100px 0 ;}
+.xyzPage .applPage ul li{margin-bottom:60px;}
+
+
+
+
+
+
+
+
+
+}
+@media screen and (max-width: 768px) {
+/*.headerMod .video{position:absolute;bottom:-285px;width:auto;height:360px;
+left:10%;margin-left:0;}*/
+
+.headerMod .video{position:absolute;bottom:-285px;width:100%;height:430px;
+left:0; margin-left:0;}
+.headerMod .video embed{width: 100%;}
+
+
+}
+@media screen and (max-width: 641px) {
+.foot .signUp .text{width:90%;height:60px;margin-bottom:20px;}
+.foot .signUp .btn{width:50%;height:60px;}
+.Fundraising ul li{height:450px;}
+	}
+
+@media screen and (max-width: 592px) {
+	}
+@media screen and (max-width: 480px) {
+
+	}
+@media screen and (max-width: 320px) {
+.Fundraising .item{padding:35px 0 35px; }
+.Fundraising ul li{height:460px;}	
+
+.headerMod .video{position:absolute;bottom:-285px;width:100%;height:365px;
+left:0; margin-left:0;}
+.headerMod .video embed{width: 100%;}
+.foot1 .contanct ul {
+    width: auto;
+    margin: 0 auto;
+    float: none;
+    padding-right: 0;
+    padding-left: 39px;
+}
+	}

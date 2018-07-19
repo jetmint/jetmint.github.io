@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<script src="js/jquery1.42.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="project">
+			<!--headerMod start-->
+			<div class="headerMod bgimg1 bgimg3">
+				<!--<div class="pic pic2">
+					<img src="img/app_bg.png"  />
+				</div>-->
+				<div class="header">
+					<div class="wrapper clearfix">
+						<div class="logo fl">
+							<a href="index.html"><img src="img/logo.png" /></a>
+						</div>
+						<div class="nav fr">
+							<ul class="clearfix">
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li><a href="ecosystem.html">Ecosystem</a></li>
+								<li><a href="xyz.html">XYZ</a></li>
+								<li><a href="developers.html">Developers</a></li>
+								<li><a href="team.html">Team</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="infoMod infoMod1">
+						<div class="wrapper">
+							<h4>Ecosystem </h4>
+							<p>
+								Jetmint is an infrastructure that could be utilized by any individual or organization, to connect projects, investors, developers 
+							</p>
+							<p>
+								with low cost yet highly efficient project funding service to realize unlimited potentials. 
+							</p>
+							<p>
+								Ecosystem is a combining process of Jetmint with all industries, organizations, individuals. 
+							</p>
+							<p>
+								It is a value exhibition process on blockchain for individual values.
+							</p>
+						</div>						
+					</div>	
+					
+				</div>
+				
+			</div>
+			<!--headerMod end-->
+			
+			<div class="content">
+				<div class="applPage">
+					<div class="wrapper">
+						<h3>Applications </h3>
+						<div class="list list1">
+							<div class="item">
+									<div class="pic">
+										<img src="img/icon11.png" />
+									</div>
+									<div class="text">
+										<h4>Token Asset Project Hatching</h4>
+										<p>
+											Project, of different sectors, financing was always difficult and time consuming. Commercial application, organization flowing, individual values can be set on blockchain. 
+										</p>
+									</div>
+								</div>
+						</div>
+						<div class="list list2">
+							<ul class="clearfix">
+								<li>
+									<div class="pic">
+											<img src="img/icon12.png" />
+										</div>
+										<div class="text">
+											<h4>Token Investment</h4>
+											<p>Traditional funding sources fund against collateral/assets with complex layers. Here the early investors can connect fundraisers directly. </p>
+										</div>
+								</li>
+								<li>
+									<div class="pic">
+											<img src="img/icon13.png" />
+										</div>
+										<div class="text">
+											<h4>Partner Development</h4>
+											<p>
+												Cost of infrastructures, match makings, developments takes away the focus of project delivery. So, token asset innovation and investment infrastructures are prepared for ones in area of blockchain investment and fundraising. 
+											</p>
+										</div>
+								</li>
+								<li>
+									<div class="pic">
+											<img src="img/icon14.png" />
+										</div>
+										<div class="text">
+											<h4>Value Exchange</h4>
+											<p>
+												 As the axis of cross-chain exchanges, Jetmint is the true foundation of providing free flow of token value crossing different chain trades.
+											</p>
+										</div>
+								</li>
+								<li>
+									<div class="pic">
+											<img src="img/icon15.png" />
+										</div>
+										<div class="text">
+											<h4>Use Cases</h4>
+											<p>
+												The first ecosystem (<a href="https://yuanzhu.io" ><b>yuanzhu.io</b></a>) based on Jetmint has already online. It is a token asset investment and fundraising platform. 
+											</p>
+										</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>	
+			
+			<div class="foot foot1">
+				<div class="wrapper">
+					<div class="contanct">
+						<h4>CONTACT US</h4>
+						<ul class="clearfix">
+							<li>
+								<a href="https://twitter.com/Jetmint_2018">
+									<img src="img/twitter.png"class="show" />
+									<img src="img/twitter-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/JetmintOrg">
+									<img src="img/facebook.png" class="show"/>
+									<img src="img/facebook-hover.png"class="hide" />
+								</a>
+							</li>
+							
+							<li>
+								<a href="https://t.me/joinchat/FdtuBhDddZYHpGiB6NUXAA">
+									<img src="img/telegram.png"class="show" />
+									<img src="img/telegram-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.reddit.com/r/jetmint">
+									<img src="img/reddit.png" class="show"/>
+									<img src="img/reddit-hover.png"class="hide" />
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<p class="copright">Copyright © 2018 XYZ Foundation</p>
+				</div>				
+			</div>
+			
+		</div>
+		
+<script>
+	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');	
+	$('.gh').click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+			$('.nav').fadeOut();
+		}		else{
+			$(this).addClass('selected');
+		$('.nav').fadeIn();
+		}
+	});
+</script>	
+	</body>
+</html>

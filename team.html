@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<script src="js/jquery1.42.min.js"></script>
+		<script src="js/common.js"></script>
+	</head>
+	<body>
+		<div class="project">
+			<!--headerMod start-->
+			<div class="headerMod bgimg1 bgimg4">
+				<!--<div class="pic pic2">
+					<img src="img/teamotp.png"  />
+				</div>-->
+				<div class="header">
+					<div class="wrapper clearfix">
+						<div class="logo fl">
+							<a href="index.html"><img src="img/logo.png" /></a>
+						</div>
+						<div class="nav fr">
+							<ul class="clearfix">
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li><a href="ecosystem.html">Ecosystem</a></li>
+								<li><a href="xyz.html">XYZ</a></li>
+								<li><a href="developers.html">Developers</a></li>
+								<li><a href="team.html">Team</a></li>
+							</ul>
+						</div>
+					</div>
+					
+				</div>
+				
+			</div>
+			<!--headerMod end-->
+			
+			<div class="content">
+				<div class="teamPage">
+					<div class="wrapper">
+						<div class="list">
+							<ul>
+								<li>
+									<div class="txt">
+											<h5>Founder&CEO&nbsp;&nbsp;Liu Heming </h5>
+											<p>Co-Founder of RenderG, who is a consecutive entrepreneur and an experienced blockchain investor.</p>
+										</div>
+								</li>
+								<li>
+									<div class="txt">
+											<h5>CTO&nbsp;&nbsp;Neo</h5>
+											<p>An expert in finance, as well as programming language research and development.  An experienced architect of various types of system.</p>
+										</div>
+								</li>
+								<li>
+									<div class="txt">
+											<h5>Chief Ecological Designer&nbsp;&nbsp;Zhang Nan</h5>
+											<p>An experienced architect of blockchain.</p>
+										</div>
+								</li>
+								<li>
+									<div class="txt">
+											<h5>Chief Architect&nbsp;&nbsp;Qin Shumao</h5>
+											<p>An experienced developer on blockchain and a blockchain architect.</p>
+										</div>
+								</li>
+								
+								<li>
+									<div class="txt">
+											<h5>COO&nbsp;&nbsp;Wang Yu</h5>
+											<p>An early investor of Stellar and a PhD in computer science.</p>
+										</div>
+								</li>
+								
+								<li>
+									<div class="txt">
+											<h5>Senior Technical Adviser&nbsp;&nbsp;Cheng Kuan</h5>
+											<p>Master of Tsinghua University, as well as an early Stellar evangelist, judger of Stellar Development Challenge, and CTO of Ledger.</p>
+										</div>
+								</li>
+								
+								<li>
+									<div class="txt">
+											<h5>Senior Technical Adviser&nbsp;&nbsp;Huang Yuhao</h5>
+											<p>A Doctor in Mathematics of Berkeley, who is the founder of Ripplecn gateway, and the first man for spreading Ripple in China.</p>
+										</div>
+								</li>
+								
+							
+							</ul>
+						</div>
+					</div>	
+				</div>
+			</div>	
+			
+			<div class="foot foot1">
+				<div class="wrapper">
+					<div class="contanct">
+						<h4>CONTACT US</h4>
+						<ul class="clearfix">
+							<li>
+								<a href="https://twitter.com/Jetmint_2018">
+									<img src="img/twitter.png"class="show" />
+									<img src="img/twitter-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/JetmintOrg">
+									<img src="img/facebook.png" class="show"/>
+									<img src="img/facebook-hover.png"class="hide" />
+								</a>
+							</li>
+							
+							<li>
+								<a href="https://t.me/joinchat/FdtuBhDddZYHpGiB6NUXAA">
+									<img src="img/telegram.png"class="show" />
+									<img src="img/telegram-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.reddit.com/r/jetmint">
+									<img src="img/reddit.png" class="show"/>
+									<img src="img/reddit-hover.png"class="hide" />
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<p class="copright">Copyright © 2018 XYZ Foundation</p>
+				</div>				
+			</div>
+			
+		</div>
+		
+<script>
+	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');	
+	$('.gh').click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+			$('.nav').fadeOut();
+		}		else{
+			$(this).addClass('selected');
+		$('.nav').fadeIn();
+		}
+	});
+</script>	
+	</body>
+</html>

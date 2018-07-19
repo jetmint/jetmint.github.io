@@ -1,74 +1,258 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=8" />
-<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes">
-<title>Jetmint - Decentralized infrastructure for token economy</title>
-<link rel="stylesheet" href="css/style.css" />
-<script src="js/jquery1.42.min.js"></script>
-<script src="js/jquery.placeholder.js"></script>
-<script src="js/jquery.slide.js"></script>
-<!--[if IE]>
-<script src="js/html5.js"></script>
-<![endif]-->
-</head>
-<body>
-<div class="layout">
-  <div class="header">
-    <div class="logo"><a href="#"><img src="images/logo.png"></a></div>
-    <ul class="action">
-      <li class="i1"><a href="./file/jetmint_whitepaper.pdf">white paper</a></li>
-    </ul>
-  </div>
-  <!--main-start-->
-  <div class="main">
-    <div class="homeMod">
-      <div class="head">
-        <div class="img"><img src="images/img3.png"></div>
-        <div class="txt">We are developing a decentralized infrastructure for ‘minting' tokens for your business.<br>
-          We will be a tiny part of the vibrant Jetmint ecosystem. </div>
-      </div>
-      <div class="body">
-        <div class="search">
-          <form action="https://formspree.io/support@jetmint.org" method="POST">
-            <input type="email" name="_replyto" class="text" placeholder="Your mailbox address">
-            <input type="button" value="Submit" class="btn"  onclick="checkNull()" >
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--main-end-->
-  <div class="footer">
-    <p>We issued XYZ asset from <a href="#">GANZBUS4726LBT2CBJ3BGF3TP4NJT5MHZMI423NHMXFRWGO2DCBQEXYZ</a> in stellar network.</p>
-	<p>Copyright &copy; 2018, Jetmint Foundation Ltd. All Rights Reserved.</p>
-  </div>
-  <!--footer-end-->
-</div>
-<script src="js/addons.js" ></script>
-<script type="text/javascript">
-    function checkNull()
-    {
-        var str="";
-        var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
-        $("input[type$='email']").each(function(n){
-            if($(this).val()=="")
-            {
-                str="Please enter the mailbox address！\r\n";
-                alert(str);
-                return;
-            }
-            if(!filter.test($(this).val()))
-            {
-                str="Please enter the correct mailbox address format！\r\n";
-                alert(str);
-                return;
-            }
-            document.forms[0].submit();
-        });
-
-    }
-</script>
-</body>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" />
+		<title></title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/responsive.css" />
+		<script src="js/jquery1.42.min.js"></script>
+	</head>
+	<body>
+		<div class="project">
+			<!--headerMod start-->
+			<div class="headerMod bgimg">
+				
+				<!--<div class="pic pic1">
+					<img src="img/top_bg.png"  />
+				</div>-->
+				
+				<div class="header">
+					<div class="wrapper clearfix">
+						<div class="logo fl">
+							<a href="index.html"><img src="img/logo.png" /></a>
+						</div>
+						<div class="nav fr">
+							<ul class="clearfix">
+								<li>
+									<a href="about.html">About</a>
+								</li>
+								<li><a href="ecosystem.html">Ecosystem</a></li>
+								<li><a href="xyz.html">XYZ</a></li>
+								<li><a href="developers.html">Developers</a></li>
+								<li><a href="team.html">Team</a></li>
+							</ul>
+						</div>						
+					</div>
+					<div class="infoMod">
+						<div class="wrapper">
+							<h4>JETMINT -Help innovation get off the ground, fast and secure</h4>
+							<p>Jetmint is a project funding platform that is distributed, community driven, and ever-growing. </p>
+							<p>It brings projects and people together, to fast-track innovation to execution.</p>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<!--headerMod end-->
+			
+			<div class="content">
+				<div class="wrapper">
+					<!--investments start-->
+					<div class="investments clearfix">
+						<div class="pic fl">
+							<img src="img/img1.png"  />
+						</div>
+						<div class="text fr">
+							<h4>Fast and Secure Project Investments</h4>
+							<p>
+								An infrastructure that could be utilized by any individual or organization, 
+to connect projects, investors, developers with low cost yet highly efficient project funding service to realize unlimited potentials.
+							</p>
+							<ul>
+								<li>- end to end project evaluation and progress tracking</li>
+								<li>- open source platform for further customization.</li>
+								<li>- free access to Stellar network.</li>
+								<li>- facilities for low-cost crypto-asset exchange listing</li>
+								<li>- easy to setup cross-chain access</li>								
+								<li>- means and tools for needs of all parties</li>
+								<li>- the foundation for the next generation blockchain</li>
+							</ul>
+						</div>
+					</div>
+					<!--start end-->
+					
+					<!--Fundraising start-->
+					<div class="Fundraising">
+						<div class="title">
+							<h4>Open and Transparent Project Fundraising</h4>
+						</div>
+						<ul class="clearfix">
+							<li>
+								<div class="item">
+										<div class="img">
+											<img src="img/icon1.png"  />
+										</div>
+										<div class="txt">
+											<h5>Independent Development</h5>
+											<p>
+												Act as the tool and platform for project owners to present their innovative ideas. As in any other open source project, community developers are also free to create new tools and bring in new ideas for the growth of Jetmint.
+											</p>
+										</div>
+									</div>
+							</li>
+							<li>
+								<div class="item">
+										<div class="img">
+											<img src="img/icon2.png"  />
+										</div>
+										<div class="txt">
+											<h5>Mutual Benefit</h5>
+											<p>
+												Connect  investors, project founders and developers around the globe. To reduce the overhead of project funding and project showcase for all participants.
+											</p>
+										</div>
+									</div>
+							</li>
+							<li>
+								<div class="item">
+										<div class="img">
+											<img src="img/icon3.png"  />
+										</div>
+										<div class="txt">
+											<h5>Free Access</h5>
+											<p>
+												Allow all of your crypto assets, at no registration and promotion cost, exchange freely on the global crypto-asset trading market via Stellar network.
+											</p>
+										</div>
+									</div>
+							</li>
+						</ul>
+					</div>
+					<!--Fundraising end-->
+					
+					
+					<div class="management">
+						<div class="title">
+							<h4>The next generation of token asset management</h4>
+						</div>
+						<ul class="clearfix">
+							<li class="active">
+								<div class="item">
+										<div class="cont clearfix">
+											<div class="icon">
+												<img src="img/icon4.png"  />
+											</div>
+											<div class="txt">
+												<h5>Funding Structures </h5>
+												<p>Fund and back project by crypto currencies on blockchain</p>
+												<p>Simplify funding process and structures</p>
+											</div>
+										</div>										
+									</div>
+							</li>
+							<li>
+								<div class="item">
+										<div class="cont clearfix">
+											<div class="icon">
+												<img src="img/icon5.png"  />
+											</div>
+											<div class="txt">
+												<h5>Project Funding </h5>
+												<p>Reduce barriers to entry</p>
+												<p>Facilitate project realizations across different sectors</p>
+											</div>
+										</div>										
+									</div>
+							</li>
+							<li>
+								<a href="javascript::">
+									<div class="item">
+										<div class="cont clearfix">
+											<div class="icon">
+												<img src="img/icon6.png"  />
+											</div>
+											<div class="txt">
+												<h5>Low Cost Service</h5>
+												<p>
+													Unify infrastructures, empower community evolvem--ent Improve matching making efficient and accuracy
+												</p>	
+											</div>
+										</div>										
+									</div>
+								</a>
+							</li>
+							<li>
+								<div class="item">
+										<div class="cont clearfix">
+											<div class="icon">
+												<img src="img/icon7.png"  />
+											</div>
+											<div class="txt">
+												<h5>Progress Tracking</h5>
+												<p>Bring transparency to project updates</p>
+												<p>Track details and changes of projects in real time </p>
+											</div>
+										</div>										
+									</div>
+							</li>
+						</ul>
+					</div>
+					
+				</div>
+			</div>
+			<div class="foot">
+				<div class="signUp wrapper">
+					<div class="">
+						<h4>Sign up for the latest Jetmint updates</h4>
+						<div class="inpt">
+							<input type="text" class="text" placeholder="Email Address" />
+							<button class="btn">SIGN UP</button>
+						</div>
+					</div>					
+				</div>			
+			</div>
+			<div class="foot foot1">
+				<div class="wrapper">
+					<div class="contanct">
+						<h4>CONTACT US</h4>
+						<ul class="clearfix">
+							<li>
+								<a href="https://twitter.com/Jetmint_2018">
+									<img src="img/twitter.png"class="show" />
+									<img src="img/twitter-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/JetmintOrg">
+									<img src="img/facebook.png" class="show"/>
+									<img src="img/facebook-hover.png"class="hide" />
+								</a>
+							</li>
+							
+							<li>
+								<a href="https://t.me/joinchat/FdtuBhDddZYHpGiB6NUXAA">
+									<img src="img/telegram.png"class="show" />
+									<img src="img/telegram-hover.png"class="hide" />
+								</a>
+							</li>
+							<li>
+								<a href="https://www.reddit.com/r/jetmint">
+									<img src="img/reddit.png" class="show"/>
+									<img src="img/reddit-hover.png"class="hide" />
+								</a>
+							</li>
+							
+						</ul>
+					</div>
+					<p class="copright">Copyright © 2018 XYZ Foundation</p>
+				</div>				
+			</div>
+			
+		</div>
+		
+<script>
+	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');	
+	$('.gh').click(function(){
+		if($(this).hasClass('selected')){
+			$(this).removeClass('selected');
+			$('.nav').fadeOut();
+		}		else{
+			$(this).addClass('selected');
+		$('.nav').fadeIn();
+		}
+	});
+</script>	
+	</body>
 </html>
