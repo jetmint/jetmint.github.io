@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=yes" />
-		<title></title>
+		<title>jetmint</title>
+		<link rel="icon" href="img/favicon.png">
 		<link rel="stylesheet" href="css/base.css" />
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/responsive.css" />
@@ -166,7 +167,7 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 											<div class="txt">
 												<h5>Low Cost Service</h5>
 												<p>
-													Unify infrastructures, empower community evolvem--ent Improve matching making efficient and accuracy
+													Unify infrastructures, empower community evolvement Improve matching making efficient and accuracy
 												</p>	
 											</div>
 										</div>										
@@ -196,10 +197,12 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 				<div class="signUp wrapper">
 					<div class="">
 						<h4>Sign up for the latest Jetmint updates</h4>
+						<form action="https://formspree.io/support@jetmint.org" method="POST">
 						<div class="inpt">
-							<input type="text" class="text" placeholder="Email Address" />
-							<button class="btn">SIGN UP</button>
+							<input type="email" class="text" placeholder="Email Address" />
+							<button class="btn" onclick="checkNull()">SIGN UP</button>
 						</div>
+						</form>
 					</div>					
 				</div>			
 			</div>
@@ -253,6 +256,27 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 		$('.nav').fadeIn();
 		}
 	});
+	
+	 function checkNull()
+    {
+        var str="";
+        var filter  = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        $("input[type$='email']").each(function(n){
+            if($(this).val()=="")
+            {
+                str="Please enter the mailbox address！\r\n";
+                alert(str);
+                return;
+            }
+            if(!filter.test($(this).val()))
+            {
+                str="Please enter the correct mailbox address format！\r\n";
+                alert(str);
+                return;
+            }
+            document.forms[0].submit();
+        });
+    }
 </script>	
 	</body>
 </html>
