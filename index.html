@@ -14,18 +14,18 @@
 		<div class="project">
 			<!--headerMod start-->
 			<div class="headerMod bgimg">
-				
+
 				<!--<div class="pic pic1">
 					<img src="img/top_bg.png"  />
 				</div>-->
-				
+
 				<div class="header">
 					<div class="wrapper clearfix">
 						<div class="logo fl">
 							<a href="index.html"><img src="img/logo.png" /></a>
 						</div>
 						<div class="nav fr">
-							<ul class="clearfix">
+							<ul class="clearfix menu">
 								<li>
 									<a href="about.html">About</a>
 								</li>
@@ -33,9 +33,15 @@
 								<li><a href="xyz.html">XYZ</a></li>
 								<li><a href="developers.html">Developers</a></li>
 								<li><a href="team.html">Team</a></li>
-								<li><a href="https://jetmint2018.oss-cn-beijing.aliyuncs.com/JetmintWhitePaper.pdf" target="_blank">Whitepaper</a></li>
+								<li class="has-submenu">
+									<a href="#" >Whitepaper</a>
+									<ol class="sub-menu">
+										<li><a href="https://jetmint2018.oss-cn-beijing.aliyuncs.com/JetmintWhitePaper.pdf" target="_blank">English</a></li>
+										<li><a href="https://jetmint2018.oss-cn-beijing.aliyuncs.com/JetmintChineseWhitePaper.pdf" target="_blank">中文</a></li>
+									</ol>
+								</li>
 							</ul>
-						</div>						
+						</div>
 					</div>
 					<div class="infoMod">
 						<div class="wrapper">
@@ -45,10 +51,10 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
 			<!--headerMod end-->
-			
+
 			<div class="content">
 				<div class="wrapper">
 					<!--investments start-->
@@ -59,7 +65,7 @@
 						<div class="text fr">
 							<h4>Fast and Secure Project Investments</h4>
 							<p>
-								An infrastructure that could be utilized by any individual or organization, 
+								An infrastructure that could be utilized by any individual or organization,
 to connect projects, investors, developers with low cost yet highly efficient project funding service to realize unlimited potentials.
 							</p>
 							<ul>
@@ -67,14 +73,14 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 								<li>- open source platform for further customization.</li>
 								<li>- free access to Stellar network.</li>
 								<li>- facilities for low-cost crypto-asset exchange listing</li>
-								<li>- easy to setup cross-chain access</li>								
+								<li>- easy to setup cross-chain access</li>
 								<li>- means and tools for needs of all parties</li>
 								<li>- the foundation for the next generation blockchain</li>
 							</ul>
 						</div>
 					</div>
 					<!--start end-->
-					
+
 					<!--Fundraising start-->
 					<div class="Fundraising">
 						<div class="title">
@@ -123,8 +129,8 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 						</ul>
 					</div>
 					<!--Fundraising end-->
-					
-					
+
+
 					<div class="management">
 						<div class="title">
 							<h4>The next generation of token asset management</h4>
@@ -141,7 +147,7 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 												<p>Fund and back project by crypto currencies on blockchain</p>
 												<p>Simplify funding process and structures</p>
 											</div>
-										</div>										
+										</div>
 									</div>
 							</li>
 							<li>
@@ -155,7 +161,7 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 												<p>Reduce barriers to entry</p>
 												<p>Facilitate project realizations across different sectors</p>
 											</div>
-										</div>										
+										</div>
 									</div>
 							</li>
 							<li>
@@ -169,9 +175,9 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 												<h5>Low Cost Service</h5>
 												<p>
 													Unify infrastructures, empower community evolvement Improve matching making efficient and accuracy
-												</p>	
+												</p>
 											</div>
-										</div>										
+										</div>
 									</div>
 								</a>
 							</li>
@@ -186,12 +192,12 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 												<p>Bring transparency to project updates</p>
 												<p>Track details and changes of projects in real time </p>
 											</div>
-										</div>										
+										</div>
 									</div>
 							</li>
 						</ul>
 					</div>
-					
+
 				</div>
 			</div>
 			<div class="foot">
@@ -204,8 +210,8 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 							<button class="btn" onclick="checkNull()">SIGN UP</button>
 						</div>
 						</form>
-					</div>					
-				</div>			
+					</div>
+				</div>
 			</div>
 			<div class="foot foot1">
 				<div class="wrapper">
@@ -224,7 +230,7 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 									<img src="img/facebook-hover.png"class="hide" />
 								</a>
 							</li>
-							
+
 							<li>
 								<a href="https://t.me/joinchat/FdtuBhDddZYHpGiB6NUXAA">
 									<img src="img/telegram.png"class="show" />
@@ -237,17 +243,17 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 									<img src="img/reddit-hover.png"class="hide" />
 								</a>
 							</li>
-							
+
 						</ul>
 					</div>
 					<p class="copright">Copyright © 2018 XYZ Foundation</p>
-				</div>				
+				</div>
 			</div>
-			
+
 		</div>
-		
+
 <script>
-	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');	
+	$('.header').append('<div class="gh"> <a href="javascript:;"></a> </div>');
 	$('.gh').click(function(){
 		if($(this).hasClass('selected')){
 			$(this).removeClass('selected');
@@ -257,7 +263,7 @@ to connect projects, investors, developers with low cost yet highly efficient pr
 		$('.nav').fadeIn();
 		}
 	});
-	
+
 	 function checkNull()
     {
         var str="";
@@ -278,6 +284,6 @@ to connect projects, investors, developers with low cost yet highly efficient pr
             document.forms[0].submit();
         });
     }
-</script>	
+</script>
 	</body>
 </html>

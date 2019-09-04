@@ -2,7 +2,7 @@
 @media screen and (max-width: 1100px) {
 .gh { position:absolute; right:0; z-index:101; padding:2px 5px;
 height:30px;width:30px;  border-radius:30%; border:1px solid #303135;
-top:0;margin-right:20px; 
+top:0;margin-right:20px;
 	transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
 	-webkit-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
 	-ms-transition: all 0.5s cubic-bezier(0.7, 0, 0.3, 1) 0s;
@@ -48,15 +48,18 @@ top:0;margin-right:20px;
 
 
 .header .gh{ display:block;}
-.header .nav{background:#fff; position:fixed; left:0; top:0; height:100%; width:100%; float:none; z-index:10; display:none;}	  
+.header .nav{background:#fff; position:fixed; left:0; top:0; height:100%; width:100%; float:none; z-index:10; display:none;}
 .header .nav ul{width:100% !important; padding-top:150px !important;}
 .header .nav li {width: 100%;height:100%; float:none;text-align: center;}
 
-.header .nav ul li{float:left;margin-right: 40px;}
-.header .nav ul li a{font-size: 14px; color: #000;font-family:tahoma;
+.header .nav .menu > li{float:left;margin-right: 40px;}
+.header .nav .menu > li a{font-size: 14px; color: #000;font-family:tahoma;
 display:block;height: 50px;line-height: 50px;    border-bottom:1px solid #ccc;}
-.header .nav ul li a.on{color: #FFC900;}
+.header .nav .menu > li a.on{color: #FFC900;}
 
+.sub-menu {
+	width: 100%;
+}
 
 .wrapper{width:auto;padding:0 15px;}
 .fl,.fr{float:none;}
@@ -193,7 +196,7 @@ left:0; margin-left:0;}
 	}
 @media screen and (max-width: 320px) {
 .Fundraising .item{padding:35px 0 35px; }
-.Fundraising ul li{height:460px;}	
+.Fundraising ul li{height:460px;}
 
 .headerMod .video{position:absolute;bottom:-285px;width:100%;height:365px;
 left:0; margin-left:0;}
